@@ -13,7 +13,7 @@ def clean_text(text):
     for word in words:
         word = word.lower()
         for char in punctuation:
-            word = word.replace(char, ' ')
+            word = word.replace(char, '')
                 
         if word not in stop_words and len(word) > 0:
             cleaned_text.append(word)
